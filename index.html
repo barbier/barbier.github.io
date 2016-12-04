@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Barbier website</title>
-</head>
-<body>
-	<h1>Please, come back later!</h1>
-</body>
-</html>
+---
+layout: default
+---
+
+{% if site.posts.size == 1 %}
+  <h2>Ainda sem posts >_<</h2>
+{% else %}
+{% for post in site.posts %}
+<div class="content list">
+  <div class="list-item">
+    <h2 class="list-post-title">
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+    <div class="list-post-date">
+      <time>{{ post.date | date_to_string }}</time>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% endif %}
