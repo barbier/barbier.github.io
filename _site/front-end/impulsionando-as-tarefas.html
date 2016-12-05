@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    
+      Impulsionando as tarefas do front-end
+    
+  </title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600">
+  <link rel="stylesheet" href=/css/main.css>
+</head>
+<body>
+  <header class="masthead">
+  <div class="container">
+    <h1 class="masthead-title">
+      <a href="/">Blog do Barbier</a>
+    </h1>
+    <nav class="masthead-nav">
+      
+        <a href="/sobre-mim/">Sobre mim</a>
+      
+        <a href="/feed.xml"></a>
+      
+        <a href="/foreigners/">So, you're not from here?</a>
+      
+        <a href="/"></a>
+      
+        <a href="/css/main.css"></a>
+      
+        <a href="/css/main.css"></a>
+      
+    </nav>
+  </div>
+</header>
+
+  <div class="container">
+    
+
+
+
+<article class="content post">
+  <h1 class="post-title">Impulsionando as tarefas do front-end</h1>
+  <div class="post-date">
+    <time>05 Dec 2016</time>
+    <span class="reading-time"> - Tempo de leitura: 1 minuto</span>
+  </div>
+
+  <p>Olá!</p>
+
+<p>Hoje eu estou lançando no meu Github um projeto chamado <a href="https://github.com/barbier/front-end-startup">Front-end startup</a>. A ideia é que ele possa ajudar a acelerar o desenvolvimento e economizar tempo na criação de tarefas básicas como compilar arquivos less e minificar javascripts.</p>
+
+<h2 id="dependncias">Dependências</h2>
+
+<p>Você precisa ter o <a href="https://nodejs.org/en/">Node.js</a> e NPM instalados. Normalmente o NPM é instalado junto com o Node.</p>
+
+<h2 id="instalao-e-uso">Instalação e uso</h2>
+
+<p>Clone o projeto e execute <code class="highlighter-rouge">npm install</code> no seu terminal.</p>
+
+<p>Para executar, digite <code class="highlighter-rouge">gulp</code> e o <a href="http://gulpjs.com/">Gulp</a> irá executar a tarefa <code class="highlighter-rouge">default</code> (padrão).</p>
+
+<h2 id="lista-de-tarefas">Lista de tarefas</h2>
+
+<ul>
+  <li>less: Compila todos os arquivos <a href="http://lesscss.org/">less</a> presentes no diretório src em um único arquivo css otimizado com <a href="https://github.com/css/csso">csso</a>.</li>
+  <li>js: Concatena e minifica todo os arquivos javascript nos diretórios src e vendor em um único arquivo. Preste atenção nas dependências no diretório vendor, é uma boa ideia colocar os arquivos manualmente numa ordem para evitar que o script final tenha problemas de execução.</li>
+  <li>server: Executa um <a href="https://www.browsersync.io/">servidor Browser Sync</a> para desenvolvimento mobile e desktop. Ele irá dar watch em alterações nos arquivos less, js e html e recarregar a página atual.</li>
+</ul>
+
+<p>Espero que vocês gostem deste projeto e que seja útil para vocês. Há algumas issues que eu gostaria de discutir futuras abordagens para a manutenção do mesmo.</p>
+
+
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+    this.page.url = 'http://yourdomain.com/front-end/impulsionando-as-tarefas';
+    this.page.identifier = '/front-end/impulsionando-as-tarefas';
+  };
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = '//blog-do-barbier.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>
+    Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript">
+      comments powered by Disqus.
+    </a>
+  </noscript>
+</article>
+
+  </div>
+</body>
+</html>
