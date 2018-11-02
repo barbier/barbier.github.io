@@ -10,13 +10,14 @@
 }
 
 .masthead {
-  background: #B9CFDD;
-
   &-title {
     font-weight: 300;
-
+    margin-bottom: 30px;
+    padding-top: 30px;
+    
     a {
       color: #000;
+      font-size: 1.7rem;
 
       &:hover,
       &:focus {
@@ -28,22 +29,6 @@
       color: #ddd;
     }
 
-  }
-
-  &-title--small {
-    margin-bottom: .75rem;
-    font-size: .75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-
-    a {
-      color: #333;
-
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
-    }
   }
 
   .masthead-nav {
@@ -78,11 +63,13 @@
 
 .post {
   &-title {
-    margin-bottom: .25rem;
+    padding-top: 30px;
   }
   &-date {
-    margin-bottom: 2rem;
     font-size: .75rem;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
     text-transform: uppercase;
   }
 }
@@ -110,5 +97,51 @@
 .projects-list {
   a {
     color: #333;
+  }
+}
+
+.page {
+  float: left;
+  height: 100%;
+  margin: 0 2.5%;
+  position: relative;
+  width: 45%;
+
+  &__lines {
+    background: linear-gradient(to bottom,white 29px,#00b0d7 1px);
+    background-size: 100% 30px;
+    min-height: 100%;
+    padding: 0 0 3%;
+
+    h2 {
+      padding-top: 29px;
+    }
+  }
+
+  a {
+    &:hover {
+      background: rgba(255,228,181, .7);
+      text-decoration: none;
+    }
+  }
+}
+
+.page--right {
+  padding: 0 3% 0 0;
+  overflow-y: auto;
+}
+
+#disqus_thread {
+  background: white;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .page {
+    float: none;
+    height: auto;
+    margin: 0;
+    padding: 0 5%;
+    width: 100%;
   }
 }

@@ -6,6 +6,7 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -48,11 +49,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 h3 {
@@ -69,7 +70,7 @@ p {
 
 ul, ol, dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 30px;
 }
 
 dt {
@@ -83,10 +84,6 @@ dd {
 ul {
   list-style: inside circle;
   padding-left: 0;
-
-  li {
-    margin-bottom: .25rem;
-  }
 
   ul,
   ol {
@@ -110,9 +107,6 @@ ol {
   }
 }
 
-p + h1,
-p + h2,
-p + h3,
 ul + h1,
 ul + h2,
 ul + h3,
@@ -163,7 +157,7 @@ pre {
 }
 
 code {
-  padding: .25em .5em;
+  padding: 0 .5em;
   font-size: 85%;
   color: #bf616a;
   background-color: #f9f9f9;
@@ -248,4 +242,10 @@ th {
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
+}
+
+p, h1, h2, li {
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
 }

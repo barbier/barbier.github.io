@@ -1,12 +1,19 @@
 <header class="masthead">
-  <div class="container">
     <h1 class="masthead-title">
       <a href="{{ site.baseurl }}/">{{ site.title }}</a>
     </h1>
+    <p>
+      Olá!
+      Eu desenvolvo front-end há 6 anos e estou buscando sempre me aprimorar, atualmente estou aberto para receber novos projetos.
+    </p>
+        
+    <p>
+      Você pode entrar em contato comigo através do meu email: gabrielnasb AT gmail DOT com e
+      <a href="https://github.com/barbier" title="Link para a minha página no github">ver alguns projetos na minha página no github.</a>
+    </p>
     <nav class="masthead-nav">
       {% for page in site.pages %}
         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
       {% endfor %}
     </nav>
-  </div>
 </header>

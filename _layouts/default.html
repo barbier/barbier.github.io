@@ -14,9 +14,15 @@
   <link rel="stylesheet" href={{ "/css/main.css" | prepend: site.baseurl }}>
 </head>
 <body>
-  {% include header.html %}
-  <div class="container">
-    {{ content }}
+  <div class="page">
+    <div class="page__lines">
+      {% include header.html %}
+    </div>
+  </div>
+  <div class="page page--right">
+    <div class="page__lines">
+      {{ content }}
+    </div>
   </div>
 </body>
 </html>
